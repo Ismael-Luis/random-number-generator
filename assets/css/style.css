@@ -1,0 +1,128 @@
+:root {
+  --background-color: #ffd7ff;
+  --primary-color:  #d0aaf5;
+  --secondary-color: #fdd6fd;
+  --accent-color: #a07deb;
+  --text-color: #111113;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+section {
+  background-color: var(--primary-color);
+  width: 500px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: var(--text-color);
+  text-align: center;
+}
+
+form {
+  margin: 0 0 0 40px;
+}
+
+.input-numbers {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0 0 0;
+}
+
+.input-pair {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin: 0 0px 0 20px;
+}
+
+#input-max {
+  height: 25px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+}
+
+#input-max label {
+  text-align: end;
+}
+
+#input-max:hover {
+  background-color:#dbbadb;
+  cursor: pointer;
+}
+
+#input-min {
+  height: 25px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+}
+
+#input-min:hover {
+  background-color: #dbbadb;
+  cursor: pointer;
+}
+
+.input-btns {
+  display: flex;
+  margin: 50px 0 0 30px;
+  text-align: center;
+  gap: 90px;
+}
+
+.input-btns .submit,
+.input-btns .reset {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--accent-color);
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
+.input-btns .submit {
+  margin: 0 20px 0 20px;
+}
+
+
+#input-min,
+#input-max {
+  outline: none; /* Remover a borda de foco preta */
+}
+
+#input-min:focus,
+#input-max:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--accent-color); /* efeito visual ao focar */
+}
+
+.input-btns .submit:hover,
+.input-btns .reset:hover {
+  background-color: #8568c4;
+  cursor: pointer;
+}
+
+.msg {
+  display: flex;
+  font-size: 30px;
+  width: fit-content;
+  margin: 40px 260px 0 220px;
+  background-color: #8568c4;
+  border-radius: 5px;
+}
